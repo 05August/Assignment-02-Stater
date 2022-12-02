@@ -9,6 +9,11 @@
     border: none !important;
   }
 
+  #nav-bar>nav a {
+    height: 62px;
+    line-height: 62px;
+  }
+
   /* css about begin */
   #about {
     background: unset;

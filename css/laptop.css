@@ -36,6 +36,8 @@ section>.container {
   transform: translateX(-50%);
   color: white;
   text-align: center;
+  width: 100%;
+
 }
 
 #banner h1 {
@@ -52,6 +54,7 @@ section>.container {
   padding: 0px 50px;
   width: 80vw;
 }
+
 
 #nav-bar img {
   height: 190px;
@@ -72,8 +75,7 @@ section>.container {
   display: inline-block;
   text-decoration: none;
   flex: 1;
-  height: 62px;
-  line-height: 62px;
+  line-height: 80px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -83,7 +85,7 @@ section>.container {
 }
 
 #nav-bar>nav>* {
-  height: 62px;
+  height: 80px;
   border-left: 1px solid #ccc;
   border-collapse: collapse;
 }
@@ -133,6 +135,10 @@ section>.container {
 #about .list-icon-info i {
   font-size: 20px;
   padding-right: 5px;
+}
+
+#about #personal-info {
+  padding: 0px 20px;
 }
 
 

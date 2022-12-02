@@ -9,11 +9,18 @@
   /* css nav begin */
   #nav-bar span {
     flex: 0.5 !important;
+    height: 62px;
+    line-height: 62px;
   }
 
   #nav-bar span h1,
   #nav-bar span div {
     display: none;
+  }
+
+  #nav-bar>nav a {
+    height: 62px;
+    line-height: 62px;
   }
 
   /* css about begin */
