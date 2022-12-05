@@ -47,6 +47,10 @@
     width: 100% !important;
   }
 
+  .job-info-item .btn-view {
+    display: flex;
+  }
+
 
   /* css certificate begin */
   #certificate>div {

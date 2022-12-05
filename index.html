@@ -12,6 +12,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/e41fa28439.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Assignment 03</title>
   </head>
   <body>
@@ -52,23 +56,37 @@
             </p>
           </div>
           <div id="personal-info">
-            <h1 class="section-title">Thông tin cá nhân</h1>
-            <ul class="mt-40 info">
-              <li><span>Giới tính</span> : Nam</li>
-              <li><span>Ngày sinh</span> : 01/01/1995</li>
-              <li><span>Điện thoại</span> : (+84) 935964949</li>
-              <li><span>Email</span> : hoanglocdn95@gmail.com</li>
-              <li><span>Địa chỉ</span> : Đà Nẵng</li>
-              <li><span>Website</span> : https://github.com/hoanglocdn95</li>
-            </ul>
-            <div class="list-icon-info">
-              <a href="#personal-info"><i class="icon-twitter icon-color"></i></a
-              ><a href="https://www.facebook.com/lst.tranloc"
-                ><i class="icon-facebook icon-color"></i></a
-              ><a
-                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrlFpkJLzMtngDBHCqHqGTcnFsvGwzgxhghxvBzKxDbkvWPHhkTMdGklcSLxKDqKdRbkWL"
-                ><i class="icon-gplus icon-color"></i></a
-              ><a href="#personal-info"><i class="icon-linkedin icon-color"></i></a>
+            <div class="info-form">
+              <h1 class="section-title">Thông tin cá nhân</h1>
+              <ul class="mt-40 info">
+                <li><span>Giới tính</span> : Nam</li>
+                <li><span>Ngày sinh</span> : 01/01/1995</li>
+                <li><span>Điện thoại</span> : (+84) 935964949</li>
+                <li><span>Email</span> : hoanglocdn95@gmail.com</li>
+                <li><span>Địa chỉ</span> : Đà Nẵng</li>
+                <li><span>Website</span> : https://github.com/hoanglocdn95</li>
+              </ul>
+              <div class="list-icon-info">
+                <a href="#personal-info"><i class="icon-twitter icon-color"></i></a
+                ><a href="https://www.facebook.com/lst.tranloc"
+                  ><i class="icon-facebook icon-color"></i></a
+                ><a
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrlFpkJLzMtngDBHCqHqGTcnFsvGwzgxhghxvBzKxDbkvWPHhkTMdGklcSLxKDqKdRbkWL"
+                  ><i class="icon-gplus icon-color"></i></a
+                ><a href="#personal-info"><i class="icon-linkedin icon-color"></i></a>
+              </div>
+            </div>
+            <div class="input-email-form">
+              <h1 class="section-title">Thông tin cá nhân</h1>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+                required
+              />
+              <p class="text-alert">Hãy nhập email để xác thực.</p>
+              <button type="button" class="btn-submit">Submit</button>
             </div>
           </div>
         </div>
@@ -83,6 +101,9 @@
               <h1>Kinh nghiệm</h1>
               <span><i class="ic-toolbox"></i></span>
             </div>
+            <button class="btn-view">
+              <i class="fa-solid fa-caret-down"></i> <span>VIEW MORE</span>
+            </button>
             <ul class="experience">
               <li>
                 <b>Full Stack Developer - Công Ty Y</b>
@@ -118,6 +139,10 @@
               <h1>Kỹ năng</h1>
               <span><i class="ic-tools-2"></i></span>
             </div>
+            <button class="btn-view">
+              <i class="fa-solid fa-caret-down"></i> <span>VIEW MORE</span>
+            </button>
+
             <div class="skills">
               <b>HTML/CSS: Fundamental</b>
               <div>
@@ -150,6 +175,10 @@
               <h1>Ngôn ngữ</h1>
               <span><i class="ic-mic"></i></span>
             </div>
+            <button class="btn-view">
+              <i class="fa-solid fa-caret-down"></i> <span>VIEW MORE</span>
+            </button>
+
             <div class="skills">
               <b>Tiếng Anh - IELTS 7.0</b>
               <div>
@@ -172,6 +201,10 @@
               <h1>Hoạt động</h1>
               <span><i class="ic-toolbox"></i></span>
             </div>
+            <button class="btn-view">
+              <i class="fa-solid fa-caret-down"></i> <span>VIEW MORE</span>
+            </button>
+
             <ul class="experience">
               <li>
                 <b>FPT Edu Hackathon 2019</b>
@@ -195,6 +228,9 @@
               <h1>Học vấn</h1>
               <span><i class="ic-pencil"></i></span>
             </div>
+            <button class="btn-view">
+              <i class="fa-solid fa-caret-down"></i> <span>VIEW MORE</span>
+            </button>
 
             <ul class="experience">
               <li>
@@ -221,6 +257,10 @@
               <h1>Sở thích</h1>
               <span><i class="ic-telescope"></i></span>
             </div>
+            <button class="btn-view">
+              <i class="fa-solid fa-caret-down"></i> <span>VIEW MORE</span>
+            </button>
+
             <div class="interests">
               <div>
                 <i class="ic-megaphone"></i>
@@ -321,6 +361,16 @@
                   <div>- HTML, CSS.</div>
                 </td>
               </tr>
+              <tr>
+                <td class="td-describe">
+                  <div>Detail</div>
+                  <div>
+                    <a href="./digital-cv.html" target="_blank" rel="noopener noreferrer"
+                      >Click to see more!</a
+                    >
+                  </div>
+                </td>
+              </tr>
             </table>
           </div>
           <div class="project-item project-second">
@@ -358,6 +408,16 @@
                 <td class="td-describe">
                   <div>Công nghệ</div>
                   <div>- HTML, CSS, JavaScript.</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-describe">
+                  <div>Detail</div>
+                  <div>
+                    <a href="./digital-cv.html" target="_blank" rel="noopener noreferrer"
+                      >Click to see more!</a
+                    >
+                  </div>
                 </td>
               </tr>
             </table>
@@ -398,6 +458,16 @@
                   <div>- HTML, CSS.</div>
                 </td>
               </tr>
+              <tr>
+                <td class="td-describe">
+                  <div>Detail</div>
+                  <div>
+                    <a href="./digital-cv.html" target="_blank" rel="noopener noreferrer"
+                      >Click to see more!</a
+                    >
+                  </div>
+                </td>
+              </tr>
             </table>
           </div>
         </div>
@@ -417,5 +487,6 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="./javascript/script.js"></script>
   </body>
 </html>

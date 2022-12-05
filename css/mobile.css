@@ -40,6 +40,7 @@
 
   #about>.container #personal-info {
     background-color: #f1f1f1;
+    padding: 50px 50px;
   }
 
   /* css job-info begin */
@@ -52,6 +53,10 @@
   #job-info>.container>div {
     width: 100%;
     padding: 0 30px
+  }
+
+  .job-info-item .btn-view {
+    display: flex;
   }
 
   /* css certificate begin */

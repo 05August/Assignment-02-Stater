@@ -138,7 +138,32 @@ section>.container {
 }
 
 #about #personal-info {
-  padding: 0px 20px;
+  padding: 0px 50px;
+}
+
+#about #personal-info input {
+  width: 100%;
+  padding-left: 5px;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  outline-color: blue;
+}
+
+.text-alert {
+  padding: 5px 0px;
+}
+
+.btn-submit {
+  height: 35px;
+  width: 65px;
+  border: none;
+  background-color: #5151f0;
+  color: white;
+  border-radius: 5px;
+}
+
+.info-form {
+  display: none;
 }
 
 
@@ -163,10 +188,52 @@ section>.container {
   display: flex;
   flex-direction: column;
   width: calc(100% / 3 - 20px) !important;
+  min-height: 190px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  height: fit-content;
+  overflow: hidden;
 }
 
-.job-info-item>div {
+
+
+.job-info-item>ul,
+.job-info-item>div:last-child {
   display: flex;
+}
+
+.job-info-item:hover .btn-view {
+  display: flex;
+}
+
+.job-info-item .btn-view {
+  height: 40px;
+  width: 190px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(255, 255, 142);
+  border-radius: 20px;
+  position: absolute;
+  top: 110px;
+  left: 20px;
+}
+
+.job-info-item .btn-view>i {
+  font-size: x-large;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 0.4s;
+}
+
+.btn-view span {
+  width: 86px;
+}
+
+.job-info-item>div:first-child {
+  display: flex;
+  min-height: 190px;
 }
 
 .job-info-item>div>h1 {
@@ -194,7 +261,7 @@ section>.container {
 .job-info-item>.experience {
   list-style: none;
   margin-left: 1em;
-
+  flex-direction: column;
 }
 
 .job-info-item>.experience>li::before {
@@ -208,7 +275,7 @@ section>.container {
 }
 
 .job-info-item li {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .job-info-item li>div:last-child {
@@ -250,6 +317,16 @@ span.skills-not-available {
   margin-right: 10px;
   width: 45px;
 }
+
+.job-info-item .skills,
+.job-info-item .interests,
+.job-info-item .experience {
+  height: 0;
+  margin-bottom: 0;
+  display: flex;
+  transition: 0.4s;
+}
+
 
 .job-info-item .skills {
   flex-direction: column;
